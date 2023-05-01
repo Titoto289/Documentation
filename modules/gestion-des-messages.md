@@ -8,7 +8,7 @@ description: >-
 
 ### Supprimer des messages
 
-Vous pouvez effacer des messages avec la commande <mark style="color: #cd6e57;">/effacer messages \[nombre]</mark>. Cela supprimera alors le nombre de messages que vous aurez renseigné dans la slash commande.
+Vous pouvez effacer des messages en masse avec la commande <mark style="color: #cd6e57;">/effacer messages \[nombre]</mark>. Cela supprimera alors le nombre de messages que vous aurez renseigné dans la slash commande.
 
 Vous avez aussi 2 options à votre disposition :
 
@@ -19,13 +19,17 @@ Vous avez aussi 2 options à votre disposition :
 **DraftBot** peut supprimer des messages uniquement s'il dispose de la permission "_Gérer les messages_" sur votre serveur.
 {% endhint %}
 
+{% hint style="warning" %}
+**DraftBot** peut supprimer des messages uniquement via la commande <mark style="color: #cd6e57;">/effacer messages \[nombre]</mark> si les messages datent d'il y a moins de **14** Jours. Cependant la commande <mark style="color: #cd6e57;">/effacer channel</mark> permet de le faire. 
+{% endhint %}
+
 ### Supprimer tous les messages d'un salon
 
 #### :warning: Attention, cette action est <mark style="color:red;">**irréversible**</mark> !
 
-La méthode pour supprimer tous les messages d'un salon est de supprimer le salon pour recréer exactement le même avec les mêmes permissions, nom, description... mais sans les messages.
+La méthode pour supprimer tous les messages d'un salon est de supprimer le salon pour recréer exactement le même avec les mêmes permissions, nom, description... mais sans les messages, ni les fils.
 
-Pour faire cela, vous pouvez utiliser la slash commande <mark style="color: #cd6e57;">/effacer channel</mark>. Si vous souhaitez vider un salon autre que celui où vous faites la commande, utilisez l'option <mark style="color: #cd6e57;">\[salon]</mark>.
+Pour faire cela, vous pouvez utiliser la slash commande <mark style="color: #cd6e57;">/vider-salon</mark>. Si vous souhaitez vider un salon autre que celui où vous faites la commande, utilisez l'option <mark style="color: #cd6e57;">\[salon]</mark>.
 
 {% hint style="warning" %}
 **DraftBot** peut supprimer tous les messages d'un salon uniquement s'il dispose des permissions "_Gérer les messages_" et "_Gérer les salons_" sur votre serveur.
@@ -39,6 +43,10 @@ Si vous avez une discussion indésirable sur votre serveur, nul besoin de suppri
 
 {% hint style="warning" %}
 **DraftBot** peut supprimer une conversation uniquement s'il dispose de la permission "_Gérer les messages_" sur votre serveur.
+{% endhint %}
+
+{% hint style="warning" %}
+**DraftBot** peut supprimer des messages uniquement via la commande <mark style="color: #cd6e57;">/effacer conversation \[nombre]</mark> si les messages datent d'il y a moins de **14** Jours. Cependant la commande <mark style="color: #cd6e57;">/effacer channel</mark> permet de le faire. 
 {% endhint %}
 
 ### Copier un ou des messages
